@@ -1,0 +1,42 @@
+@page {
+  size: A4;
+  margin: 16mm 15mm 18mm;
+  @bottom-center {
+    content: counter(page);
+    font-family: "Noto Sans CJK SC", sans-serif;
+    font-size: 8.5pt;
+    color: #66776f;
+  }
+}
+/* Inserted last in the document as author CSS, not as a lower-priority user sheet. */
+@media print {
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: white; }
+  body { font-family: "Noto Sans CJK SC", sans-serif;
+         font-size: 11pt; line-height: 1.62; color: #202725; }
+  main { width: auto; max-width: none; margin: 0; padding: 0;
+         border: 0; border-radius: 0; background: white; }
+  nav { display: none; }
+  h1 { font-size: 21pt; line-height: 1.4; margin: 0 0 5mm;
+       break-after: avoid; }
+  h2 { font-size: 14.5pt; line-height: 1.45; margin: 6mm 0 2.5mm;
+       padding-top: 2.5mm; border-top: .7pt solid #dce8e2;
+       break-after: avoid; }
+  h3 { font-size: 12pt; line-height: 1.45; margin: 4mm 0 2mm;
+       break-after: avoid; }
+  p { margin: 2.5mm 0; orphans: 3; widows: 3; }
+  .time { display: block; font-size: 9pt; line-height: 1.4;
+          color: #66776f; margin: 1.5mm 0 2.5mm; break-after: avoid; }
+  figure { margin: 3.5mm 0 4mm; break-inside: avoid; }
+  figure a { display: block; }
+  figure img { display: block; width: auto; max-width: 100%; height: auto;
+               max-height: 235mm; margin-left: auto; margin-right: auto;
+               border: .4pt solid #e7e7e7; border-radius: 0; }
+  figcaption, .image-caption { font-family: "Noto Sans CJK SC", sans-serif;
+       font-size: 8.5pt; line-height: 1.35; color: #66776f;
+       text-align: center; margin: 1.4mm 0 0; }
+  a { color: #116b5a; text-decoration: none; }
+  .katex { font-size: 1.04em; }
+  .katex-display { margin: 3mm 0; break-inside: avoid; }
+  .formula { margin: 3mm 0; padding: 0; border: 0; background: none; }
+}

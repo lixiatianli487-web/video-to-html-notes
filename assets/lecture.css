@@ -1,0 +1,19 @@
+*{box-sizing:border-box}
+body{margin:0;background:#f6f4ef;color:#202725;font:18px/1.95 system-ui,"Noto Sans CJK SC",sans-serif}
+main{max-width:1000px;margin:40px auto;background:#fff;padding:50px 64px;border:1px solid #e5e8e2;border-radius:12px}
+h1{font-size:34px;line-height:1.4;margin-top:0}
+h2{font-size:25px;margin-top:64px;padding-top:20px;border-top:2px solid #e1ebe7;scroll-margin-top:20px}
+p{margin:20px 0;overflow-wrap:anywhere}
+a{color:#116b5a;text-decoration:none}a:hover{text-decoration:underline}
+.meta,.time,figcaption{color:#66776f;font-size:14px}
+.intro{padding:18px 22px;background:#f1f7f4;border-left:3px solid #197b65;font-size:16px}
+nav{display:grid;gap:4px;padding:18px 22px;background:#f7f8f5;font-size:16px}
+section{margin:28px 0}figure{margin:26px 0 36px}
+img{display:block;width:100%;height:auto;border:1px solid #e7e7e7;border-radius:4px}
+figcaption{text-align:center;margin-top:5px}
+.katex{font-size:1.08em}
+.formula{margin:22px 0;padding:4px 0;overflow-x:auto}
+.formula .katex{font-size:1.08em}
+.formula .katex-display{margin:.25em 0}
+@media(max-width:700px){main{margin:0;padding:25px 20px;border:0;border-radius:0}h1{font-size:27px}body{font-size:17px}}
+@media print{body{background:white}main{margin:0;padding:0;border:0}figure{break-inside:avoid}h2{break-after:avoid}nav{display:none}}

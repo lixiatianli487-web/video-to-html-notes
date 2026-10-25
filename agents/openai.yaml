@@ -1,0 +1,4 @@
+interface:
+  display_name: "视频图文讲义"
+  short_description: "平台字幕或本地转写获取材料、完整图文 Markdown 讲义、离线 HTML 与 PDF 导出"
+  default_prompt: "使用 $video-to-html-notes 将这个视频整理成完整图文 HTML 讲义，保留原内容和时间文字，不补充、不化简。"
